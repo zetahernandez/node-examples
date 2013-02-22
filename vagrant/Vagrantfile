@@ -1,0 +1,30 @@
+Vagrant::Config.run do |config|
+
+	load 'my_config.rb'
+
+	config.vm.define :node do |config|
+		# config.vm.boot_mode = :gui
+		config.vm.box = $box
+		config.vm.box_url = $box_url
+		config.vm.forward_port 22, 2224
+		config.vm.network :hostonly, "44.44.44.4"
+		config.vm.share_folder('examplefolder', '/usr/local/example', $repo)
+		
+		# config.vm.network :bridged
+
+		config.vm.customize [
+			"modifyvm", :id,
+			"--memory", "1024",
+			"--name", "Node"
+		]
+
+		config.vm.provision :chef_solo do |chef|
+			chef.cookbooks_path = 'cookbooks'
+			chef.roles_path		= 'roles'
+			chef.log_level		= :debug
+			
+			chef.add_role 'vagrant_nodejs'
+		end
+	end
+
+end

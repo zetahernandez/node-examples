@@ -1,0 +1,13 @@
+<h2>Client</h2>
+
+<p>
+  <b>Name:</b> {{name}}
+</p>
+
+<p>
+  <b>Age:</b> {{age}}
+</p>
+
+{{#linkTo "clients"}}←All Clients{{/linkTo}}
+{{#linkTo "edit_client" model}}Edit{{/linkTo}}
+<a href="#" {{action "destroy"}}>Destroy</a>

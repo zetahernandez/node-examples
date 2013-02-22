@@ -1,0 +1,21 @@
+<h2>Clients</h2>
+
+{{#linkTo "new_client"}}New Client{{/linkTo}}
+
+<table>
+  <thead>
+    <th>name</th>
+    <th>age</th>
+  </thead>
+  <tbody>
+    {{#each client in controller}}
+    <tr>
+      <td>{{client.name}}</td>
+      <td>{{client.age}}</td>
+      <td>{{#linkTo "client" client}}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
