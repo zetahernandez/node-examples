@@ -1,0 +1,30 @@
+{
+  "name": "web-example",
+  "version": "0.0.1",
+  "description": "Node web examples",
+  "author": "Zeta",
+  "website": {
+    "url": "https://github.com/zetahernandez/node-examples"
+  },
+  "keywords": [
+    "node",
+    "example"
+  ],
+  "bugs": {
+    "url": "https://github.com/zetahernandez/node-examples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zetahernandez/node-examples"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "_dependencies": {
+    "underscore": "~1.4.2",
+  },
+  "devDependencies": {
+    "grunt": "~0.3.15",
+    "expect.js": "~0.2.0"
+  }
+}

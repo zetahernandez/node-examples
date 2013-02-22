@@ -11,7 +11,7 @@ define({
 		}
 	},
 	paths: {
-		// 'App': 'app/main',
+		'App': 'application',
 		// 'models': 'app/models',
 		// 'views': 'app/views',
 		// 'router': 'app/views',
