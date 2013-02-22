@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-default['nodejs']['install_method'] = 'package'
+default['nodejs']['install_method'] = 'source'
 default['nodejs']['version'] = '0.8.16'
 default['nodejs']['checksum'] = '2cd09d4227c787d6886be45dc54dad5aed779d7bd4b1e15ba930101d9d1ed2a4'
 default['nodejs']['dir'] = '/usr/local'
