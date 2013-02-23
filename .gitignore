@@ -2,7 +2,7 @@
 ## project
 #################
 vagrant/.vagrant
-
+vagrant/my_config.rb
 #################
 ## Eclipse
 #################
