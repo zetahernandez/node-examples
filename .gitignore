@@ -2,6 +2,7 @@
 ## project
 #################
 vagrant/.vagrant
+examples/express-node-example/node_modules/*
 
 #################
 ## Eclipse

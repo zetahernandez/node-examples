@@ -8,6 +8,7 @@ Vagrant::Config.run do |config|
 		config.vm.box_url = $box_url
 		config.vm.forward_port 22, 2224
 		config.vm.network :hostonly, "44.44.44.4"
+		config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/examplefolder", "1"]
 		config.vm.share_folder('examplefolder', '/usr/local/example', $repo)
 		
 		# config.vm.network :bridged
