@@ -14,7 +14,7 @@ Vagrant::Config.run do |config|
 
 		config.vm.customize [
 			"modifyvm", :id,
-			"--memory", "2048",
+			"--memory", "1024",
 			"--name", "Node"
 		]
 
