@@ -3,6 +3,8 @@
 #################
 vagrant/.vagrant
 vagrant/my_config.rb
+examples/express-node-example/node_modules/*
+
 #################
 ## Eclipse
 #################
